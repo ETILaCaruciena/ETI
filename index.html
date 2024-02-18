@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+  <script src="https://kit.fontawesome.com/a6c72f882b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <title>Escuela Técnica Industral "La Carucieña"</title>
+</head>
+<body background="Imagenes/fondo.jpg">
+
+<!-- 
+El elemento `header` se utiliza para contener el encabezado de la página, que incluye el logo y el menú de navegación.
+-->
+
+  <header>
+
+    <!-- 
+Dentro del `header`, el div con la clase `.header-superior` contiene el logo de la página, que está dentro de un enlace para que sea clickeable.
+-->
+
+    <div class="header-superior">
+      <div class="logo">
+        <a onclick="scrollToSection('banner')"><img src="Imagenes/logo.jpg"></a>
+      </div>
+    </div>
+
+<!-- 
+El div con la clase `.container-menu` contiene el menú de navegación. Dentro de este, hay un input de tipo checkbox que se utiliza para mostrar y ocultar el menú en dispositivos móviles.
+-->
+
+    <div class="container-menu">
+      <div class="menu">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" id="label-check">
+          <i class="fa-solid fa-bars icono"></i>
+        </label>
+
+        <!-- 
+El elemento `nav` contiene una lista no ordenada con los enlaces del menú. Algunos de estos enlaces tienen un submenú que se muestra cuando se pasa el cursor sobre ellos.
+-->
+
+        <nav>
+          <ul>
+            <li><a href="#">SOBRE NOSOTROS</a>
+              <ul>
+            <li><a  onclick="scrollToSection('historia')">Reseña Histórica</a></li>
+            <li><a  onclick="scrollToSection('mision')">Misión</a></li>
+            <li><a  onclick="scrollToSection('vision')">Visión</a></li>
+            <li><a  onclick="scrollToSection('beneficios')">Beneficios de estudiar en nuestra institución</a></li>
+            <li><a  onclick="scrollToSection('actividades')">Actividades Extracurriculares</a></li>
+            <li><a  onclick="scrollToSection('especialidades')">Especialidades</a></li>
+            <li><a  onclick="scrollToSection('direccion')">Dirección</a></li>
+            <li><a  onclick="scrollToSection('galeria')">Galeria</a></li>
+          </ul>            </li>
+            <li><a  href="#contactos">CONTACTOS</a></li>
+            <li><a href="Descargas/Manual de uso.pptx" download>MANUAL DE USO</a></li>
+            <li><a href="Descargas/descargable.pdf" download>DESCARGAR</a></li>  <!-- Opcion para descargar el contenido de la página en un pdf.-->
+          </ul>
+        </nav>      
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+La sección con la clase `.flex-container` contiene el contenido principal de la página.
+-->
+
+  <section class="flex-container">
+
+    <!-- 
+Dentro de `.flex-container`, el div con id `banner` contiene el título de la página y un mensaje de bienvenida.
+-->
+
+    <div id="banner" class="caja">
+    <h1>Escuela Técnica Industrial "La Carucieña"</h1><br>
+    <p><b>Bienvenido a nuestra página</b></p>
+  	</div>
+
+
+
+<!-- 
+El div con id `contenido` contiene el contenido principal de la página. Este contenido está organizado en párrafos.
+-->
+
+  <div id="contenido" class="caja">
+    <!-- Contenido de la página -->
+
+
+ <h1>Bienvenidos a la Escuela Técnica Industrial "La Carucieña"</h1><br>
+
+  <p>Les damos la bienvenida a la página web de nuestra prestigiosa institución educativa fundada en 1977. Somos una escuela técnica referente en la formación integral de jóvenes en distintas especialidades del área industrial.</p><br>
+
+  <p>Nos enfocamos en una educación de calidad que les proporcione las competencias y habilidades necesarias para incorporarse exitosamente al sector productivo o continuar su formación académica.</p><br>
+ 
+  <p>Los invitamos a conocer más sobre nuestra escuela a través de esta plataforma donde compartimos información relevante sobre nuestra historia, visión, oferta académica, instalaciones, proyectos, logros y muchos más aspectos que nos enorgullecen.</p><br>
+
+  <p>¡Sean bienvenidos! Estamos para servirles.</p><br>
+
+  <div><center><img src="Imagenes/carucieña.jpg"></center></div><br>
+
+  <h2 id="historia">Reseña Histórica</h2><br>
+  
+  <p>La ETI “La Carucieña” está ubicada en el Estado Lara, en la ciudad de Barquisimeto, Municipio Iribarren, Parroquia Guerrera Juan de Villegas, en el ámbito de la comunidad “La Carucieña, calle 13 RI.F.: J.-407625233, es de Dependencia Nacional, el Código D.E.A es: OD01811303 y el Código Estadístico es: 133103. La institución pertenece al Circuito: Simón Bolívar, Código13-03-02-001.</p><br>
+
+  <p>La ETI “La Carucieña” fue fundada en el mes de octubre del año 1977 durante el gobierno de Carlos Andrés Pérez. En sus comienzos solo era Escuela Básica funcionando con 6 secciones de 1er año con el nombre E.B.I Augusto Malavé Villalba, los alumnos que salían egresados de esta institución  obtenían el título de Educación Básica. El cambio de nombre a ETI “La Carucieña” ocurrio cuando la institucion se convirtio en una Escuela Tecnica, como indican las siglan. Las actividades del área técnica se inician en aulas improvisadas, ya que los talleres no habían sido construidos; la dotación de los mismos es adquirida mediante la desincorporación de máquinas y herramientas empleadas en otras instituciones.</p><br>
+  
+  <p>Posteriormente se logra la construcción de los talleres de las diversas áreas correspondientes a la especialidad industrial. La escuela ha tenido proyecciones hacia la comunidad a través de diversas actividades, tales como realización de talleres de pintura, reparación de artefactos electrodomésticos, primeros auxilios, peluquería, manicure y pedicure, construcción de pupitres, rejas, entre otros.</p><br>
+
+  <p>El plantel desde el año 1999-2000 retoma su ciclo de formación profesional, incorporando la especialidad Industrial, Mención Mecánica Automotriz en el año 2000-2001 y posteriormente la especialidad Comercial, con la mención de Informática a partir del año escolar 2002-2003; para ese periodo escolar la institución trabajaba con un total de 28 secciones y su personal docente estaba constituido por 62 profesores entre titulares, suplentes y contratados, 11 personas del personal Administrativo, 12 del personal Obrero y contaba con una matrícula de 1050 estudiantes.</p><br>
+  
+  <p>El plantel contaba ya con 06 secciones de 7°, 05 secciones de 8°, 05 secciones de 9°, 04 secciones de 1°, 04 secciones de 2° y 04 secciones de  3° en formación profesional. Por contar con 28 secciones se asignan la unidad correspondiente a la Subdirección Académica encargada de manejar los aspectos relacionados con la administración de planes y programas a partir del año 2001-2002 y con la reactivación de las escuelas técnicas se implementa un nuevo enfoque de enseñanza por competencia lográndose un impacto positivo en el rendimiento de los estudiantes, en los núcleos y docentes.</p><br>
+
+  <p>En ese mismo año se lleva a cabo una remodelación total de la infraestructura con un costo aproximado de 700 millones, asumiendo como premisa formar talentos humanos con una visión integral que quiere productividad y servicios según las demandas y políticas nacionales en materia educativa contextualizada a las características locales y regionales. La institución ha tenido 12 directores, su primer director fue el Prof. José Gerardo Pérez Linares, actualmente, al momento de recolectar esta información, el director es el Prof. Luiber Gómez.</p><br>
+
+  <center>
+  	<div class="historia">
+  	<img src="Imagenes/historia1.jpg">
+  	<img src="Imagenes/historia2.jpg">
+  </div>
+  </center>
+
+ <div class="flex1">
+
+  <div>
+
+    <h2 id="mision">Misión</h2><br>
+    <p>La institución tiene como misión la formación, capacitación y actualización de jóvenes aptos para responder a las necesidades y expectativas de la sociedad contemporánea. Buscamos fortalecer el nivel pedagógico, administrativo y tecnológico, con el fin de ofrecer una educación integral y de calidad que satisfaga las necesidades e intereses de los educandos, manteniendo un equilibrio con las demandas del desarrollo local, regional y nacional.</p><br>
+
+  <p>Nuestro objetivo es formar individuos con un amplio sentido de solidaridad, abiertos al pensamiento universal, con una conciencia ética y crítica, adoptando nuevos enfoques paradigmáticos en el conocimiento de la cultura y del mundo. Buscamos el desarrollo integral del educando bajo una concepción de conocimientos y aprendizajes holísticos, garantizando la adquisición de los mismos de manera significativa mediante actividades constructivas, dentro de un marco axiológico que les permita desenvolverse en la sociedad de manera cognitiva, social, cultural y personal, aplicando estrategias innovadoras y métodos cualitativos y materiales existentes.</p><br></div>
+
+   
+    <div id="image1"><img class="image" src="Imagenes/image1.jpg">
+    </div>
+  </div>
+  
+
+  <div class="flex1">
+
+    <div>
+
+    <h2 id="vision">Visión</h2><br>
+
+  <p>La visión de la Escuela Técnica Industrial “La Carucieña”, es ser una escuela modelo a nivel municipal, regional, nacional e internacional con valores compartidos, comprometidos con el cambio y desarrollo hacia una educación politécnica, humanística e integral, participativa y activa que interactúe con la comunidad y su entorno, con el propósito de formar personas críticas y competentes para el presente y futuro de Venezuela.</p><br>
+  
+  <p>En ella se formaran individuos que participen en la construcción de una sociedad justa, amante de la paz y del trabajo en función de sus deberes y derechos como ciudadanos y ciudadanas que promuevan la autogestión, adaptación y creación de nuevas tecnologías, tomando como fundamento a la investigación usando siempre la excelencia académica que permitirá su integración a la sociedad de una forma productiva.</p><br></div>
+
+       <div id="image2"><img class="image" src="Imagenes/image2.jpg">
+    </div>
+    </div>
+
+
+
+
+  <h2 id="beneficios">Beneficios de estudiar en nuestra institución</h2><br>
+
+<p>
+  Estudiar en la Escuela Técnica Industrial "La Carucieña" trae grandes beneficios para los jóvenes de la zona. Al ser una institución con más de 40 años de trayectoria, cuenta con instalaciones y talleres muy bien equipados para la formación en especialidades técnicas industriales.  
+</p><br>
+
+<p>
+  Los estudiantes que completan su formación profesional obtienen el título de Técnico Medio en las especialidades de Administración y Transporte Multimodal. De esta forma adquieren los conocimientos teóricos y prácticos para desempeñarse laboralmente en estas áreas luego de su graduación.
+</p><br>
+
+<p> 
+  Los estudiantes obtienen los conocimientos prácticos necesarios a través de las pasantías en los talleres de Transporte Multimodal
+ y Administración. Además, los docentes tienen una sólida experiencia profesional capacitándolos en habilidades y competencias técnicas muy demandadas en el sector productivo. 
+</p><br>
+
+<p>
+  Finalmente, la formación integral con enfoque en valores que imparte la institución es clave para el crecimiento personal de los jóvenes. Por todos estos motivos, estudiar en la ETI "La Carucieña" abre muchas puertas a un futuro profesional exitoso.
+</p><br>
+
+
+
+<h2 id="actividades">Actividades Extracurriculares</h2><br>
+
+<p>
+  Además del programa académico regular, en la Escuela Técnica Industrial "La Carucieña" se promueve la participación de los estudiantes en actividades extracurriculares para complementar su formación.
+</p><br>
+
+<p>Entre estas actividades se encuentran:</p><br>
+
+<h3>Pasantías</h3><br>
+
+<p>  
+  Los estudiantes tienen la posibilidad de realizar pasantías en las cuales ponen en práctica los conocimientos aprendidos en su especialidad técnica. Asisten a empresas locales de sectores industriales donde trabajan junto a profesionales activos aprendiendo habilidades y competencias muy valoradas en el mundo laboral.  
+</p><br>
+
+<h3>Servicio Comunitario</h3><br>
+
+<p>
+Asimismo, los alumnos llevan a cabo un servicio comunitario colaborando en iniciativas de beneficio local. Algunas de estas actividades incluyen: recolección y reciclaje de plásticos/chatarras, apoyo en labores de limpieza y mantenimiento de espacios públicos, pintura de la institución educativa, entre otras.  
+</p><br>
+
+<p>
+  De esta manera se promueve un sentido más amplio de responsabilidad social y compromiso comunitario entre los jóvenes estudiantes.
+</p><br>
+ 
+
+
+ <h2 id="especialidades">Especialidades</h2><br>
+
+<p>
+  Actualmente la Escuela Técnica Industrial “La Carucieña” ofrece formación en las siguientes especialidades técnicas:
+</p><br>
+
+
+
+<div class="flex2">
+
+     <div id="image4"><img class="image" src="Imagenes/image4.jpg">
+    </div>
+
+  <div>
+  <h3>Administración</h3><br>
+  <p>
+    Esta especialidad se enfoca en la gestión de recursos humanos, financieros y materiales de una organización. Los egresados de esta carrera pueden desempeñarse en diversos sectores como el público, el privado, el cooperativo y el social.
+  </p><br>
+  </div>
+
+
+
+</div>
+
+<div>
+
+
+
+<div class="flex2">
+
+  <div>
+  <h3>Transporte Multimodal</h3><br>
+  <p>
+    Esta especialidad se dedica al estudio, diseño, planificación, operación y control de los sistemas de transporte que involucran diferentes modos como el terrestre, el acuático y el aéreo. Los egresados de esta carrera pueden trabajar en empresas de transporte, logística, aduanas, comercio exterior y turismo.  
+  </p><br></div>
+
+     <div id="image3"><img class="image" src="Imagenes/image3.jpg">
+    </div>
+
+
+</div>
+
+
+ <h2 id="direccion">Dirección</h2><br>
+
+ <!-- 
+El elemento `<h1>` siguiente contiene la dirección de la escuela en texto fuerte.
+-->
+
+ <h1><strong>Urbanización “La Carucieña” Calle 13, Sector 2 en Barquisimeto, Estado Lara, Venezuela</strong></h1>
+
+ <!-- 
+El elemento `<iframe>` se utiliza para incrustar un mapa de Google Maps que muestra la ubicación de la escuela.
+-->
+
+  <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1964.4168223190795!2d-69.3614489!3d10.030582899999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8761499908bba5%3A0x1b7f959291307747!2sEscuela%20T%C3%A9cnica%20Industrial%20%22La%20Carucie%C3%B1a%22!5e0!3m2!1ses-419!2sus!4v1703000068549!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center><br>
+
+<h2 id="galeria">Galeria</h2>
+
+<center>
+
+  <!-- 
+Los elementos `<div>` con las clases `.fachada`, `.primero` y `.cap` contienen imágenes de la escuela. Estas imágenes están organizadas en diferentes categorías.
+-->
+
+<div class="fachada">
+
+	<img src="Imagenes/fachada1.jpg">
+	<img src="Imagenes/fachada2.jpg">
+	<img src="Imagenes/fachada3.jpg">
+
+</div>
+
+<div class="primero">
+	
+	<img src="Imagenes/1er año 1.jpg">
+	<img src="Imagenes/1er año 2.jpg">
+
+</div>
+
+
+
+	<img src="Imagenes/1er año 3.jpg" class="primero-v">
+
+
+
+<div>
+<img src="Imagenes/captura1.jpg" class="cap">
+<img src="Imagenes/captura2.jpg" class="cap">
+<img src="Imagenes/captura3.jpg" class="cap">
+<img src="Imagenes/captura4.jpg" class="cap">
+<img src="Imagenes/captura5.jpg" class="cap">
+<img src="Imagenes/captura6.jpg" class="cap">
+<img src="Imagenes/captura7.jpg" class="cap">
+<img src="Imagenes/captura8.jpg" class="cap">
+</div>
+
+</center>
+
+
+
+
+
+  <h2 id="contactos">Contactos</h2><br>
+
+ 
+  
+  <p>
+    Email: eti.lacaruciena.consultas@gmail.com
+  </p>
+
+
+
+ </section>
+
+ <!-- 
+El elemento `<script>` contiene una función de JavaScript que se utiliza para desplazarse suavemente a diferentes secciones de la página cuando se hace clic en los enlaces del menú.
+-->
+
+ <script>
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+      var offsetTop = section.offsetTop - 190;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+</script>
+
+
+</body>
+</html>

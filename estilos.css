@@ -1,0 +1,326 @@
+
+.flex1 {
+  display: flex;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+}
+
+
+/* 
+El selector `*` se utiliza para seleccionar todos los elementos y aplicar algunos estilos básicos como eliminar
+ márgenes y rellenos, establecer box-sizing en border-box y eliminar text-decoration.
+*/
+
+*{                                                                         
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+/* 
+El bloque de código `.header-superior` se utiliza para estilizar el encabezado superior de la página.
+ Se establece un ancho máximo, se centra el contenido y se alinea a los elementos en el centro.
+*/
+
+.header-superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+/* 
+El bloque de código `.logo img` se utiliza para darle un tamaño específico a la imagen del logo.
+*/
+
+.logo img{
+    width: 67px;
+    height: 69px;
+    border-radius: 5px;
+}
+
+/*Barra menu*/
+
+/* 
+El bloque de código `.container-menu` se utiliza para darle un tamaño y un color de fondo específico al contenedor del menú.
+*/
+
+
+.container-menu{
+    width: 100%;
+    height: 70px;
+    background: #17202A;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%    
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul a{
+    color: white;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+
+/* 
+El bloque de código `nav > ul > li > a` se utiliza para darle estilos a los enlaces del menú principal. Cuando se pasa el cursor sobre ellos, se transforman y cambian de color de fondo.
+*/
+
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #212F3D;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+/*Sub menu*/
+
+/* 
+El bloque de código `nav ul li ul` se utiliza para darle estilos al submenú. Cuando se pasa el cursor sobre un elemento del menú principal que tiene un submenú, este se muestra.
+*/
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #2C3E50;
+    box-shadow: 0px 0px 5px 0px;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    display: none;
+    z-index: 10;
+}
+
+nav ul li:hover ul{
+    display: block;
+    top: 70px;
+}
+
+nav ul li ul li a{
+    display: block;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+    background: #566573;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+/* 
+El bloque de código `.icono` se utiliza para darle estilos al icono del menú en dispositivos móviles.
+*/
+
+.icono{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+#label-check{
+    width: 40px;
+    height: 100%;
+    display: none;
+}
+
+#check-menu{
+    display: none;
+}
+
+h1{
+	text-align: center;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.flex-container{
+	display: flex;
+	flex-flow: wrap column;
+	margin-top: 185px;
+}
+
+.caja{
+	margin: 5px;
+}
+
+#banner {
+	background-image: url(Imagenes/banner.jpeg);
+  	background-position: center;
+  	background-size: 1300px 180px;
+  	padding: 60px;
+  	text-align: center;
+ 	background-repeat: no-repeat;
+}
+
+#contenido {
+    margin: 0 20%; 
+    padding: 20px;
+    background-color: #E5E7E9;
+    color: #333;
+}
+
+.fachada img{
+    max-width: 500px;
+    max-height: 230px;
+}
+
+.primero img{
+    max-width: 500px;
+    max-height: 375px;
+}
+
+.primero-v{
+    max-width: 375px;
+    max-height: 500px;
+}
+
+.cap{
+    max-width: 500px;
+    max-height: 375px;
+}
+
+.image{
+    padding: 20px;
+    max-width: 350px;
+    max-height: 263px;
+
+}
+
+#image1{
+    margin-top: 50px;
+}
+
+.historia img{
+    padding: 5px;
+    max-width: 350px;
+    max-height: 382px;
+}
+
+
+/* 
+El bloque de código `@media screen and (max-width: 720px)` se utiliza para aplicar estilos específicos cuando el ancho de la pantalla es menor o igual a 720px. Esto es útil para hacer que el diseño sea responsivo y se vea bien en diferentes tamaños de pantalla.
+*/
+
+
+/*Codigo Responsive*/
+
+@media screen and (max-width: 720px){
+
+    /*Header superior*/
+
+    .header-superior{
+        padding: 10px;
+    }
+
+    /*Barra menu*/
+
+    nav > ul{
+        flex-direction: column;
+        background: #17202A;
+        position: fixed;
+        left: 0;
+        top: 155px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        display: none;
+    }
+
+    nav > ul > li > a{
+        background: #17202A;
+        border: 30px solid #17202A;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+        background: #17202A;
+    }
+
+    /*Sub menu*/
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav  >  ul  >  li:hover  >  ul{
+        top: 70px;
+    }
+
+    #label-check{
+        display: block;
+    }
+
+    .icono{
+        display: flex;
+    }
+
+    #check-menu:checked ~ nav > ul{
+        height: 80px;
+        display: block;
+    }
+
+    .flex-container{
+	   margin-top: 165px;
+}
+
+
